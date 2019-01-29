@@ -1,3 +1,53 @@
+使用说明：
+
+1. curl http://pastebin.com/raw/QWpJjgU3 
+
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+        hideDotFiles = dotGitOnly
+[remote "origin"]
+        url = https://github.com/RealTimeWeb/blockpy
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+[remote "blockly"]
+        url = https://github.com/RealTimeWeb/blockly
+        fetch = +refs/heads/*:refs/remotes/blockly/*
+[remote "blockly_upstream"]
+    url = https://github.com/google/blockly.git
+    fetch = +refs/heads/*:refs/remotes/blockly/*
+[remote "skulpt"]
+        url = https://github.com/RealTimeWeb/skulpt
+        fetch = +refs/heads/*:refs/remotes/skulpt/*
+[remote "skulpt_upstream"]
+        url = https://github.com/skulpt/skulpt.git
+        fetch = +refs/heads/*:refs/remotes/skulpt/*
+[remote "server"]
+        url = https://github.com/RealTimeWeb/Blockpy-Server.git
+        fetch = +refs/heads/*:refs/remotes/server/*
+[remote "blockly_games"]
+        url = https://github.com/RealTimeWeb/blockly-games.git
+        
+把这里的这几个文件夹都下载下来，如下图所示：
+  
+drwxr-xr-x  8 root root 4.0K Jan 28 09:42 ./
+drwxr-xr-x 18 root root 4.0K Jan 28 09:18 ../
+drwxr-xr-x 13 root root 4.0K Jan 28 11:59 blockly/
+drwxr-xr-x  6 root root 4.0K Jan 28 09:42 blockly-games/
+drwxr-xr-x 10 root root 4.0K Jan 28 09:19 blockpy/
+drwxr-xr-x 10 root root 4.0K Jan 28 09:42 Blockpy-Server/
+drwxr-xr-x  8 root root 4.0K Jan 28 09:35 closure-library/
+drwxr-xr-x 12 root root 4.0K Jan 28 09:45 skulpt/
+  
+然后把 ./Blockpy-Server/static/skulpt/dist 目录下的两个js文件复制到：skulpt/dist 下面即可
+
+
 corgis-blockly
 ==============
 
